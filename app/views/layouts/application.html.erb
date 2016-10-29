@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>Arsalan - Developers</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="scss/font-awesome/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header id="main-navigation" class="clearfix">
+		<a href="#" class="name">ZAT.PK</a>
+	<nav>
+		<%= link_to 'Articles', posts_path %>
+		<a href="#">Projects</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+	</header>
 
 <%= yield %>
 
