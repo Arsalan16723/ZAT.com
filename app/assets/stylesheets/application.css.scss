@@ -1,4 +1,6 @@
 @import 'normalize';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 $dark: #424652;
 $light: #9a9da4;
 $white: #FFF;
@@ -76,12 +78,12 @@ hr {
 		font-size: .8em;
 		letter-spacing: 3px;
 		text-transform: uppercase;
-		border: 2px solid #FF0000;
+		border: 2px solid $dark;
 		padding: 1rem;
 		text-decoration: none;
 		float: left;
 		color:$white;
-		background: #FF0000;
+		background: $dark;
 		border-radius: 10px;
 		&:hover{
 			color:$dark;
