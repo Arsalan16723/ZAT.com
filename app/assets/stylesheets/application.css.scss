@@ -30,6 +30,9 @@ body{
 	display: table;
 }
 
+.hidden {
+	display:none;
+}
 .clearfix:after{
 	clear:both;
 }
