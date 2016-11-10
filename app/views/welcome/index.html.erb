@@ -1,6 +1,6 @@
 <div class="wrapper wrapper_padding clearfix">
 	<div class="col-1 about homepage_content">
-		<h2>About</h2>
+		<h2>About Us</h2>
 		<hr>
 		<p>We are a team of Developers &amp; Designers.We are a team of Developers and Designers.</p>
 		<p>We are a team of Developers and Designers.</p>
@@ -11,7 +11,7 @@
 		 <p>We are a team of Developers and <a href="#"> Designers</a>.</p>
 	</div>
 	<div class="col-2 homepage_content">
-		<h2><a href="#">Stuff I'VE Written</a></h2>
+		<h2><a href="#">Blog Posts</a></h2>
 		<hr>
 		<% @posts.each do |post| %>
 			<h3><%= link_to post.title, post %> </h3>
@@ -20,7 +20,7 @@
 		
 	</div>
 	<div class="col-3  homepage_content">
-		<h2><a href="#">Stuff I'VE Written</a></h2>
+		<h2><a href="#">Projects</a></h2>
 		<hr>
 		<% @projects.each do |project| %>
 			<h3><%= link_to project.title, project %> </h3>
