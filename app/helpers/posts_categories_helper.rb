@@ -1,2 +1,0 @@
-module PostsCategoriesHelper
-end
