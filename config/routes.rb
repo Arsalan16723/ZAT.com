@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :posts_categories
+
   devise_for :users
   resources :posts
   resources :projects
