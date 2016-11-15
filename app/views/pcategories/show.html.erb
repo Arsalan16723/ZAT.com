@@ -1,4 +1,4 @@
-<h1 id="page_title"><%= @pcategory.name%>'s Articles</h1>
+<h1 id="page_title"><%= @pcategory.name%>'s Articles</h1> | 
 <div id="posts_wrapper" class="skinny_wrapper">
 	<% @pcategory.posts.each do |post| %>
 		<div class="post">
@@ -8,3 +8,10 @@
 		</div>
 	<% end %>
 </div>
+
+<% if user_signed_in? %>
+		<div id="admin_links">
+			<%= link_to 'Edit', edit_pcategory_path(@pcategory) %>
+			<%= link_to 'Delete', pcategory_path(@pcategory), method: :delete, data: {confirm: "Are you sure"} %>
+		</div>
+	<% end %>

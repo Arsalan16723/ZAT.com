@@ -12,6 +12,7 @@
 		<%= link_to (image_tag 'LOGO1.png'), root_path, class: 'name' %>
 	<nav>
 		<b><%= link_to 'Articles', posts_path %></b>
+		<% if params[:controller] == 'posts' %><b><%= link_to 'Categories', pcategories_path %></b><%end %>
 		<b><%=link_to "Projects", projects_path %></b>
 		<b><%= link_to "Contact", new_contact_path %></b>
 		<% if user_signed_in? %>

@@ -1,12 +1,13 @@
 class PcategoriesController < ApplicationController
   before_action :find_category, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
   def new
     @pcategory = Pcategory.new
   end
 
   def create
     @pcategory = Pcategory.new pcategory_params
-    if @category.save
+    if @pcategory.save
       redirect_to root_path, notice: "Article saved!"
     else
       render 'new', notice: "Unable to save post"
@@ -17,7 +18,7 @@ class PcategoriesController < ApplicationController
     @pcategories = Pcategory.all 
   end
   def show
-    
+
   end
   def edit
   end
@@ -38,9 +39,9 @@ class PcategoriesController < ApplicationController
   end
   private
   def pcategory_params
-    params.require(:pcategory).permit(:name)
+    params.require(:pcategory).permit(:name, :slug)
   end
   def find_category
-    @pcategory = Pcategory.find(params[:id])
+    @pcategory = Pcategory.friendly.find(params[:id])
   end
 end
