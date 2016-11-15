@@ -1,0 +1,10 @@
+<h1 id="page_title">All Categories</h1>
+<div id="posts_wrapper" class="skinny_wrapper">
+	<% @pcategories.each do |post| %>
+		<div class="post">
+			<p class="date"><%= post.posts.count%> posts</p>
+			<h2><a href="#"><%= link_to post.name, post %></a></h2>
+			<hr>
+		</div>
+	<% end %>
+</div>

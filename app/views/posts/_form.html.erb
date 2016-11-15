@@ -1,6 +1,6 @@
 <%= form_for @post do |f| %>
 	<% if @post.errors.any? %>
-		<h2><%= pluralize(@post.errors.count, "error") %> prevemnted this post from being saved %>
+		<h2><%= pluralize(@post.errors.count, "error") %> prevented this post from being saved</h2>
 		<ul>
 			<% @post.errors.full_messages.each do |msg| %>
 			<li><%= msg %></li>
@@ -14,9 +14,16 @@
 	<br>
 	<br>
 
+	<%= f.label :pcategory, 'Select Category' %>
+	<%= f.select :pcategory_id, Pcategory.all.collect {|x| [x.name, x.id]}, {:include_blank => 'Select One'}, class: 'select' %>
+
+	<br>
+	<br>
+
 	<%= f.label :content, "Write Your article Here" %><br>
 	<%= f.text_area :content %>
 
+	
 	<br>
 	<br>
 	<%= f.submit %>
