@@ -1,11 +1,15 @@
 @import 'normalize';
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import 'bootstrap';
+@import 'bootstrap-sprockets';
 $dark: #424652;
 $light: #9a9da4;
 $white: #FFF;
 $highlight: #8bc6db;
 $border: #E9E9E9;
+@import url('https://fonts.googleapis.com/css?family=Qwigley');
+
 * {
 	box-sizing: border-box;
 }
@@ -45,13 +49,13 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 	color:$dark;
 }
 h1{
-	font-size: 2.5rem;
+	font-size: 3.0rem;
 }
 h2{
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 h3{
-	font-size: 1.75rem;
+	font-size: 2.0rem;
 }
 h4{
 	font-size: 1.375rem;
@@ -63,7 +67,7 @@ h6{
 	font-size: 1rem;
 }
 p, li{
-	font-size: 1.1rem;
+	font-size: 2.1rem;
 	line-height: 1.75; 
 }
 
@@ -100,8 +104,8 @@ hr {
 		}
 		*/
 		img{
-			width:300px;
-			height:70px;
+			width:175px;
+			height:55px;
 			float:left;
 		}
 		
@@ -198,3 +202,4 @@ input[type='submit'], .button{
 @import 'welcome';
 @import 'post_projects';
 @import 'pygments';
+@import '_headerstyles';

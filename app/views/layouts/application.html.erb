@@ -8,8 +8,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<% if params[:controller] != 'welcome' %>
 	<header id="main-navigation" class="clearfix">
-		<%= link_to (image_tag 'zat final png.png'), root_path, class: 'name' %>
+		<%= link_to (image_tag 'zat-web.png'), root_path, class: 'name' %>
 	<nav>
 		<b><%= link_to 'Articles', posts_path %></b>
 		<% if params[:controller] == 'posts' %><b><%= link_to 'Categories', pcategories_path %></b><%end %>
@@ -20,6 +21,7 @@
 		<% end %>
 	</nav>
 	</header>
+	<% end %>
 	<% if notice %>
 		<p class="notice"><%= notice %></p>
 	<% elsif alert %>
@@ -27,6 +29,7 @@
 	<% end %>
 
 	<%= yield %>
+	<% if params[:controller] != 'welcome' %>
 	<footer id="main_footer">
 		<p class="copyright"> &copy;2016  ZAT.PK | SOFTWARE ENGINEERS</p>
 		<nav>
@@ -35,6 +38,7 @@
 			<a href="#"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></i></a>
 		</nav>
 	</footer>
+	<% end %>
 
 </body>
 </html>

@@ -1,0 +1,268 @@
+<style type="text/css">
+	body{
+		padding: 0;
+		margin-top: 0;
+	}
+</style>
+<script type="text/javascript">
+$(function(){
+		$('#play').click(function () {
+		$("#slider").cycle('resume');
+		return false;
+});
+		$('#pause').click(function () {
+		$("#slider").cycle('pause');
+		return false;
+});
+});
+		$(function() {
+		$("#slider").cycle({
+			fx: "scrollHorz", 
+			next: "#next",
+			prev: "#prev",	
+			pager: "#pager",
+			timeout: 15000,
+			speed:  3500
+});
+});	
+</script>
+<div class="jumbotron" id="top1" style=" width:1295; height:650px; padding:0;" >
+	<div class="text-center" class="logo" style="padding-top:70px;">
+		<%= image_tag("zat-web.png")%>
+	</div>
+	<div class="text-center" id="headline">
+		<section class="cd-intro" style="padding:10px">
+			<h1>Hello, Welcome  to  <b>ZAT  TECH</b>.</h1>
+	  		<h3  style="color:#fff"class="cd-headline rotate-1">
+		    <span>We Design and Develop<br></span>
+		    <span class="cd-words-wrapper" style="color:#3498db; letter-spacing: 3px; font-family:'Qwigley', cursive;">
+		      <b class="is-visible">Apps</b>
+		      <b>Logos.</b>
+		      <b>User Interfaces.</b>
+		      <b>Mock ups.</b>
+		      <b>Web Applications.</b>
+		      <b>Corporate Websites.</b>
+		      <b>Landing Pages.</b>
+		    </span>
+	 		 </h3>
+		</section>
+
+		<div class="text-center" style="margin-top:130px;">
+			<a href="#services" style="text-decoration:none;"><h2 style="color:#fff;">Scroll down to know more about <b>ZAT</b></h2>
+			<i class="fa fa-lg fa-angle-double-down fa-5x" aria-hidden="true"></i></a>
+		</div>
+	</div>	
+</div>
+<div class="container">
+	<section id="about">
+		<h2 align="center"> <strong>ABOUT US </strong></h2>
+		<hr style="margin-left:553px;">
+		<div class="row">
+			<div class="col-md-9 col-md-offset-2">
+				<p>ZAT as Web Based Company is an experienced and passionate group of project managers, designers and web-developers who believe TeamWork as an artform</p>
+			</div>
+		</div>
+	</section>
+</div>
+<div class="jumbotron separate" >
+	<section id="services">
+		<h2 align="center"><strong>OUR SERVICES</strong></h2>
+		<hr style="margin-left:640px;">
+		<div class="row">
+			<div class="col-md-4">
+				<h4 align="center"><b>Designing/Branding</b></h4>
+				<div class="text-center img1">
+					<%= image_tag('branding.svg') %>
+				</div>
+				
+			</div>
+			<div class="col-md-4">
+				<h4 align="center"><b>UI/UX Development</b></h4>
+				<div class="text-center img1">
+					<%= image_tag('ux.svg') %>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<h4 align="center"><b>Backend Development</b></h4>
+				<div class="text-center img1">
+					<%= image_tag('backend.svg') %>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<div class="container">
+	<section id="portfoilio">
+		<h2 align="center"><strong>OUR WORK</strong></h2>
+		<hr style="margin-left:543px;">
+		<div class="row" style="padding-top:30px;">
+			<div class="col-md-3">
+				<div class="pro-image">
+					<%= image_tag('bg.jpg') %>
+				</div>
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-6 col-md-offset-1">
+				<div class="pro-title">
+					<h3><b>FACEFANS(social-network)</b></h3>
+				</div>
+				<div class="descript">
+					<p class="date">You can place Font Awesome icons just about anywhere using the CSS Prefix fa and the icon's name. Font Awesome is designed to be used with inline elements (we like the  tag for brevity, but using a is more semantically correct)</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="padding-top:70px;">
+			<div class="col-md-7">
+				<div class="pro-title">
+					<h3><b>FACEFANS(social-network)</b></h3>
+				</div>
+				<div class="descript">
+					<p class="date">You can place Font Awesome icons just about anywhere using the CSS Prefix fa and the icon's name. Font Awesome is designed to be used with inline elements (we like the  tag for brevity, but using a is more semantically correct)</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-md-3">
+				<div class="pro-image2">
+					<%= image_tag('bg.jpg') %>
+				</div>
+			</div>
+			<div class="col-md-1">
+			</div>
+			
+		</div>
+		<div class="row" style="padding-top:70px;">
+			<div class="col-md-3">
+				<div class="pro-image">
+					<%= image_tag('bg.jpg') %>
+				</div>
+			</div>
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-6 col-md-offset-1">
+				<div class="pro-title">
+					<h3><b>FACEFANS(social-network)</b></h3>
+				</div>
+				<div class="descript">
+					<p class="date">You can place Font Awesome icons just about anywhere using the CSS Prefix fa and the icon's name. Font Awesome is designed to be used with inline elements (we like the  tag for brevity, but using a is more semantically correct)</p>
+				</div>
+			</div>
+		</div>
+		<p align="center" style="margin-top:40px;"><button class="btn btn-lg btn-warning btn2">View More</button></p>
+	</section>
+</div>
+<div class="container"	>
+	<section id="team">
+		<h2 align="center"><strong>OUR TEAM</strong></h2>
+		<hr style="margin-left:553px;">
+		<div class="row">
+			<div class="col-md-12">
+
+	<div id="hero">
+
+		<div id="pager"></div>
+		<div id="pause">&asymp;</div>
+		<div id="play">&Delta;</div>
+		<div id="next">&rang;</div>
+		<div id="prev">&lang;</div>
+		
+		<div id="slider">	 
+			<div class="items">
+
+				<%= image_tag('img1.jpg') %>
+
+					<!--<img src="img1.jpg" width="100%" height="560">
+				
+				<div class="info">
+					<h2>  Want to Know more </h2>
+					<p> A glance of <a href="#"> Curriculum Vitae </a></p>
+
+				</div>-->
+				
+			</div> <!-- end items class div -->
+
+			<div class="items">
+				<%= image_tag('img2.jpg') %>
+				<!--	<img src="img2.jpg" width="100%" height="560">
+
+				<div class="info">
+					<h2>Want to Know more  </h2>
+					<p> A glance of<a href="#"> Curriculum Vitae </a></p>
+
+				</div>End info  -->
+				
+			</div> <!-- end items class div --> 
+				
+			<div class="items">
+
+					<%= image_tag('img3.jpg') %>
+
+			<!--	<div class="info">
+					<h2>Want to know more </h2>
+					<p> A glance of <a href="#"> Curriculum Vitae </a></p>
+
+				</div> --> <!-- End info --> 
+
+				<hr>
+				
+			</div> <!-- end items class div -->
+		</div> <!-- End slider id -->
+	</div> <!--end of hero id -->
+</div>
+
+
+
+
+		</div>
+	</section>
+</div>
+<div class="jumbotron" style="margin-top:30px; background-color:#2FB1D3">
+	<section id="contact">
+		<h2 align="center"> <b>Want to Work with Us</b></h2>
+		<h3 align="center">Get Connected Now!</h3>
+		<div class="row">
+			<div class="col-md-12">
+				<div align="center">
+				<div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
+		     <a itemprop='url' href=https://www.fiverr.com/arsalan_23 rel="nofollow" target="_blank" style='display: inline-block;'>
+		        <div class='fiverr-seller-content' id='fiverr-seller-widget-content-f2882e6b-83c1-40a9-85b0-80d3df0d2825' itemprop='contentURL' style='display: none;'></div>
+		        <div id='fiverr-widget-seller-data' style='display: none;'>
+		            <div itemprop='name' >arsalan_23</div>
+		            <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
+		            <div itemprop='jobtitle'>Seller</div>
+		            <div itemprop='description'>I have been providing Commercial Web Solutions using Rails for 2+ yrs.I am specialize in building websites using Test Driven Approach and modern tools having experience in Ruby, RubyOnRails,Version control with Git,Cloud server Heroku,Expert In BDD and TDD, Sqlite3,Mysql.HTML,Twitter bootstrap
+
+				</div>
+		        </div>
+		   			 </a>
+			</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+<div class="jumbotro">
+	<section id="footer">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-content" align="center">
+					<div class="logo">
+						<%= image_tag("zat-web.png")%>
+					</div>
+					  <p>All Rights Reserved by ZAT © 2016</p>
+					<div class="social-icons">
+						<ul>
+							<li><i class="fa fa-x5 fa-facebook"></i></li>
+							<li><i class="fa fa-x5 fa-twitter"></i></li>
+							<li><i class="fa fa-x5 fa-github"></i></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+<script id='fiverr-seller-widget-script-f2882e6b-83c1-40a9-85b0-80d3df0d2825' src='https://widgets.fiverr.com/api/v1/seller/arsalan_23?widget_id=f2882e6b-83c1-40a9-85b0-80d3df0d2825' data-config='{"category_name":"Programming & Tech"}' async='true' defer='true'></script>
