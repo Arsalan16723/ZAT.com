@@ -27,8 +27,34 @@ $(function(){
 });	
 </script>
 <div class="jumbotron" id="top1" style=" width:1295; height:650px; padding:0;" >
-	<div class="text-center" class="logo" style="padding-top:70px;">
-		<%= image_tag("zat-web.png")%>
+	<div class="row">
+		<div class="col-md-12">
+		<div class="logo">
+			<%= image_tag("zat-web.png")%>
+		</div>
+			<nav id="nav">
+	<input id="menu-button" type="checkbox" class=""></input>
+	<label for="menu-button" class="nav-button"><div class="menu-icon"></div>
+	</label>
+	<div class="nav-bar-wrapper">
+		<ul class="nav-bar">
+			<a href="#" class="nav-link">IM</a>
+			<a href="#" class="nav-link">Kai</a>
+			<a href="#" class="nav-link">Hao</a>
+		</ul>
+	</div>
+</nav>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+      <feBlend in="SourceGraphic" in2="goo" />
+    </filter>
+  </defs>
+</svg>
+		</div>
 	</div>
 	<div class="text-center" id="headline">
 		<section class="cd-intro" style="padding:10px">
@@ -92,7 +118,7 @@ $(function(){
 	</section>
 </div>
 <div class="container">
-	<section id="portfoilio">
+	<section id="portfolio">
 		<h2 align="center"><strong>OUR WORK</strong></h2>
 		<hr style="margin-left:543px;">
 		<div class="row" style="padding-top:30px;">
@@ -153,21 +179,21 @@ $(function(){
 		<p align="center" style="margin-top:40px;"><button class="btn btn-lg btn-warning btn2">View More</button></p>
 	</section>
 </div>
-<div class="container"	>
+<div class="container-fluid"	>
 	<section id="team">
 		<h2 align="center"><strong>OUR TEAM</strong></h2>
-		<hr style="margin-left:553px;">
+		<hr style="margin-left:643px;">
 		<div class="row">
 			<div class="col-md-12">
 
 	<div id="hero">
-
-		<div id="pager"></div>
-		<div id="pause">&asymp;</div>
-		<div id="play">&Delta;</div>
-		<div id="next">&rang;</div>
-		<div id="prev">&lang;</div>
-		
+		<div class="buttonss" align="right;">	
+			<div id="pager"></div>
+			<div id="pause">&asymp;</div>
+			<div id="play">&Delta;</div>
+			<div id="next">&rang;</div>
+			<div id="prev">&lang;</div>
+		</div>
 		<div id="slider">	 
 			<div class="items">
 
@@ -218,51 +244,100 @@ $(function(){
 		</div>
 	</section>
 </div>
-<div class="jumbotron" style="margin-top:30px; background-color:#2FB1D3">
+<div class="contact" style="margin-top:30px; background-color:#2FB1D3">
 	<section id="contact">
-		<h2 align="center"> <b>Want to Work with Us</b></h2>
-		<h3 align="center">Get Connected Now!</h3>
+		<div class="htext">
+			<h2 align="center"> <b>Want to Work with Us</b></h2>
+			<h3 align="center">Get Connected Now!</h3>
+		</div>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-4">
 				<div align="center">
-				<div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
-		     <a itemprop='url' href=https://www.fiverr.com/arsalan_23 rel="nofollow" target="_blank" style='display: inline-block;'>
-		        <div class='fiverr-seller-content' id='fiverr-seller-widget-content-f2882e6b-83c1-40a9-85b0-80d3df0d2825' itemprop='contentURL' style='display: none;'></div>
-		        <div id='fiverr-widget-seller-data' style='display: none;'>
-		            <div itemprop='name' >arsalan_23</div>
-		            <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
-		            <div itemprop='jobtitle'>Seller</div>
-		            <div itemprop='description'>I have been providing Commercial Web Solutions using Rails for 2+ yrs.I am specialize in building websites using Test Driven Approach and modern tools having experience in Ruby, RubyOnRails,Version control with Git,Cloud server Heroku,Expert In BDD and TDD, Sqlite3,Mysql.HTML,Twitter bootstrap
+					<div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
+				    	<a itemprop='url' href=https://www.fiverr.com/arsalan_23 rel="nofollow" target="_blank" style='display: inline-block;'>
+					        <div class='fiverr-seller-content' id='fiverr-seller-widget-content-f2882e6b-83c1-40a9-85b0-80d3df0d2825' itemprop='contentURL' style='display: none;'></div>
+					        <div id='fiverr-widget-seller-data' style='display: none;'>
+					            <div itemprop='name' >arsalan_23</div>
+					            <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
+					            <div itemprop='jobtitle'>Seller</div>
+					            <div itemprop='description'>I have been providing Commercial Web Solutions using Rails for 2+ yrs.I am specialize in building websites using Test Driven Approach and modern tools having experience in Ruby, RubyOnRails,Version control with Git,Cloud server Heroku,Expert In BDD and TDD, Sqlite3,Mysql.HTML,Twitter bootstrap
 
+								</div>
+					        </div>
+				   		</a>
+					</div>
 				</div>
-		        </div>
-		   			 </a>
 			</div>
+			<div class="col-md-4">
+				<div class="well" align="center" >
+					
+				</div>
 			</div>
+			<div class="col-md-4">
+				<div class="well" align="center" >
+					
+				</div>
 			</div>
 		</div>
 	</section>
-
 </div>
-<div class="jumbotro">
-	<section id="footer">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="footer-content" align="center">
-					<div class="logo">
-						<%= image_tag("zat-web.png")%>
-					</div>
-					  <p>All Rights Reserved by ZAT © 2016</p>
-					<div class="social-icons">
+<div class="footer-info">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="links text-center">
+				<h4 align="center" class="fh">Links:</h4>
+				<div class="row">
+					<div class="col-sm-6">
 						<ul>
-							<li><i class="fa fa-x5 fa-facebook"></i></li>
-							<li><i class="fa fa-x5 fa-twitter"></i></li>
-							<li><i class="fa fa-x5 fa-github"></i></li>
+							<li><a href="#top1">Top</a></li>
+							<li><a href="#about">About Us</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#contact">Hire ZAT</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6" align="left">
+						<ul>
+							<li><%= link_to "Visit ZAT Blog", posts_path %></li>
+							<li><a href="#portfolio">Portfoilio</a></li>
+							<li><a href="#team">Team</a></li>
+
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+		<div class="col-md-4">
+			<div align="center" class="social text-center">
+				<h4 align="center" class="fh">Follow Us:</h4>
+				<div id="follow">
+					<ul>
+						<li><a href="#" target="_blank"><%= image_tag("facebook.svg") %></a></li>
+						<li><a href="#"><%= image_tag("twitter.svg") %></a></li>
+						<li><a href="#"><%= image_tag("youtube.svg") %></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-md-4">
+			<div class="location text-center">
+				<h4 align="center" class="fh">Address:</h4>
+				<address>
+					<%= image_tag("compass.svg") %><br><br>
+					Mubarak Plaza Office-No#07<br>
+					University Road, Chakdara<br>
+					Malakand Dir(Lower), KPK PAK
+				</address>
+			</div>
+		</div>
+	</div>
+	<div class="row copyright">
+		<div class="col-md-12 text-center">
+			<p>All Rights Reserved by ZAT &copy; 2016</p>
+		</div>
+	</div>
+	</div>
 </div>
+
 <script id='fiverr-seller-widget-script-f2882e6b-83c1-40a9-85b0-80d3df0d2825' src='https://widgets.fiverr.com/api/v1/seller/arsalan_23?widget_id=f2882e6b-83c1-40a9-85b0-80d3df0d2825' data-config='{"category_name":"Programming & Tech"}' async='true' defer='true'></script>
