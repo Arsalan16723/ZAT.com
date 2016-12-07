@@ -22,40 +22,73 @@ $(function(){
 			prev: "#prev",	
 			pager: "#pager",
 			timeout: 15000,
-			speed:  4500
+			speed:  1500
 });
 });	
 </script>
 <div class="jumbotron" id="top1" style=" width:1295; height:650px; padding:0;" >
-	<div class="row">
-		<div class="col-md-12">
-		<div class="logo">
-			<%= image_tag("zat-web.png")%>
-		</div>
-			<nav id="nav">
-	<input id="menu-button" type="checkbox" class=""></input>
-	<label for="menu-button" class="nav-button"><div class="menu-icon"></div>
-	</label>
-	<div class="nav-bar-wrapper">
-		<ul class="nav-bar">
-			<a href="#" class="nav-link">IM</a>
-			<a href="#" class="nav-link">Kai</a>
-			<a href="#" class="nav-link">Hao</a>
-		</ul>
-	</div>
-</nav>
-
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <defs>
-    <filter id="goo">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-      <feBlend in="SourceGraphic" in2="goo" />
-    </filter>
-  </defs>
-</svg>
-		</div>
-	</div>
+	<header class='masthead'>
+  <nav id="nav">
+    <div class='nav-container'>
+      <div>
+        <input id='slider1' name='slider1' type='checkbox'>
+        <label class='slide has-child' for='slider1'>
+          <span class='element'>Bg</span>
+          <span class='name'>Blog</span>
+        </label>
+        <div class='child-menu'>
+          <a href='zat-pk.herokuapp.com/welcome/index' target="_blank">Blog</a>
+          <a href='zat-pk.herokuapp.com/posts' target="_blank">Posts</a>
+        </div>
+      </div>
+      <div>
+        <a class='slide' href='#about'>
+          <span class='element'>Ab</span>
+          <span class='name'>About</span>
+        </a>
+      </div>
+      <div>
+        <a class='slide' href='#services'>
+          <span class='element'>Se</span>
+          <span class='name'>Services</span>
+        </a>
+      </div>
+      <div>
+        <a class='slide' href='#team'>
+          <span class='element'>Te</span>
+          <span class='name'>Team</span>
+        </a>
+      </div>
+      <div>
+        <a class='slide' href='#team'>
+          <span class='element'>Te</span>
+          <span class='name'>Team</span>
+        </a>
+      </div>
+      
+      <div>
+        <a class='slide' href='#contact'>
+          <span class='element'>C</span>
+          <span class='name'>Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class='social-container'>
+    <span>
+      <a class='social-roll github' href='#'></a>
+    </span>
+    <span>
+      <a class='social-roll twitter' href='#'></a>
+    </span>
+    <span>
+      <a class='social-roll linkedin' href='#'></a>
+    </span>
+    <span>
+      <a class='social-roll rss' href='#'></a>
+    </span>
+  </div>
+</header>
 	<div class="text-center" id="headline">
 		<section class="cd-intro" style="padding:10px">
 			<h1>Hello, Welcome  to  <b>ZAT  TECH</b>.</h1>
@@ -341,3 +374,19 @@ $(function(){
 </div>
 
 <script id='fiverr-seller-widget-script-f2882e6b-83c1-40a9-85b0-80d3df0d2825' src='https://widgets.fiverr.com/api/v1/seller/arsalan_23?widget_id=f2882e6b-83c1-40a9-85b0-80d3df0d2825' data-config='{"category_name":"Programming & Tech"}' async='true' defer='true'></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 1000, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
